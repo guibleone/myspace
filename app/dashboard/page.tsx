@@ -1,9 +1,9 @@
 import { getServerSession } from 'next-auth'
 import React from 'react'
-import { authOptions } from '../api/auth/[...nextauth]/route'
 import { redirect } from 'next/navigation'
 import { prisma } from '@/lib/prisma'
 import { ProfileForm } from './ProfileForm'
+import { authOptions } from '@/utils/authOptions'
 
 
 export default async function Dashboard() {
